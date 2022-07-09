@@ -160,10 +160,50 @@ font-family: 'Open Sans', sans-serif;
 
 .new {
     height: 200px;
-    color: #fff;
-    background-color: aquamarine;
+    color: red;
+    background-color: #FFF;
 }
 
 
 
-
+/* FOOTER START */
+.footer__top{
+    background-color: rgb(227, 136, 24);
+    height: 26vh;
+    text-align: center;
+}
+.footer__center{
+    background-color: rgb(40, 39, 46); 
+    height: 45vh;
+    text-align: center;
+    padding-top: 80px;
+}
+.footer__center-adr{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+  
+}
+.footer__bottom{
+    border-top: 1px solid rgb(95, 91, 91);
+    height: 15vh;
+    color: #fff;
+    background-color: rgb(40, 39, 46);
+}
+.footer__bottom-content{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    
+}
+.footer__bottom-leftcolor{
+    color: rgb(227, 136, 24);
+}
+/* FOOTER END  */
