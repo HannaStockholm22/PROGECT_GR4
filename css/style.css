@@ -1,3 +1,169 @@
-*{
+* {
     box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+
+body {
+    background-color: rgb(158, 175, 170);
+}
+
+/*font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/* HEADER-TOP START */
+.header__top {
+    background-color: rgb(40, 39, 46); 
+}
+
+.row__list {
+    display: flex;
+    justify-content: end;
+}
+
+.row__list-item {
+    display: inline-block;
+   /* border: 1px solid red; */
+    align-items: center;
+}
+
+.row__list-item+.row__list-item {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
+
+.row__list-link {
+    display: flex;
+
+}
+
+.row__list-p {
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.row__list-sp {
+    color: rgb(227, 136, 24);
+}
+
+/* HEADER-TOP END */
+
+/* HEADER NAVBAR START */
+.menu__content {
+    justify-content: end;
+}
+
+.menu__list {
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-right: 7px;
+}
+
+.nav-link {
+    color: rgb(39, 30, 30);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: rgb(227, 136, 24);
+}
+
+/* HEADER NAVBAR END */
+
+/* HEM SLIDER START */
+.hem {
+    position: relative;
+    height: 60vh;
+}
+
+.carousel-indicators button {
+    display: none;
+}
+
+.carousel-inner {
+    position: absolute;
+    top: 17px;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    color: #000;
+    text-align: left;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-caption {
+    left: 0;
+    top: 30%;
+}
+
+.hem__text {
+    font-family: "Poppins", sans-serif;
+}
+
+.hem__text-top {
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hem__text-important {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.hem__text-bottom {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.adress {
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+}
+
+.adress__h {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+/* HEM SLIDER +adr  END */
+
+
+.new {
+    height: 200px;
+    color: #fff;
+    background-color: aquamarine;
+}
+
+
+
+
