@@ -2,14 +2,13 @@
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-
-
 
 li {
     list-style: none;
@@ -18,7 +17,8 @@ li {
 a {
     text-decoration: none;
 }
-p{
+
+p {
     margin: 0;
 }
 
@@ -27,37 +27,14 @@ body {
     background-color: rgb(158, 175, 170);
 }
 
-/*font-family: 'Inter', sans-serif;
+/*
 font-family: 'Open Sans', sans-serif;
 */
 
 
 /* HEADER-TOP START */
-.header__top{
-    background-color: rgb(39, 30, 30);
-}
-.row__list{
-    display: flex;
-    justify-content: end;
-}
-.row__list-item{
-    display: inline-block;
-    /*border: 1px solid red; */
-    align-items: center;
-}
-.row__list-item + .row__list-item{   
-    border-left: 1px solid #fff;
-    padding-left: 20px;
-}
-.row__list-link{
-display: flex;
-
-}
-.row__list-p{
-    color:aliceblue; 
-}
 .header__top {
-    background-color: rgb(40, 39, 46); 
+    background-color: rgb(39, 30, 30);
 }
 
 .row__list {
@@ -67,7 +44,36 @@ display: flex;
 
 .row__list-item {
     display: inline-block;
-   /* border: 1px solid red; */
+    /*border: 1px solid red; */
+    align-items: center;
+}
+
+.row__list-item+.row__list-item {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
+
+.row__list-link {
+    display: flex;
+
+}
+
+.row__list-p {
+    color: aliceblue;
+}
+
+.header__top {
+    background-color: rgb(40, 39, 46);
+}
+
+.row__list {
+    display: flex;
+    justify-content: end;
+}
+
+.row__list-item {
+    display: inline-block;
+    /* border: 1px solid red; */
     align-items: center;
 }
 
@@ -87,31 +93,54 @@ display: flex;
     font-weight: 400;
     font-size: 15px;
 }
-.row__list-sp{
+
+.row__list-sp {
     color: rgb(227, 136, 24);
 }
+
 /* HEADER-TOP END */
 
 /* HEADER NAVBAR START */
-.menu__content{
-    justify-content: end;  
+.menu__content {
+    justify-content: end;
 }
-.menu__list{
-    margin-right: 15px; 
+
+.menu__list {
+    margin-right: 15px;
 }
-.nav-item{
+
+.nav-item {
     margin-right: 7px;
 }
-.nav-link{
-    color: rgb(39, 30, 30); 
+
+.nav-link {
+    color: rgb(39, 30, 30);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(227, 136, 24);
 }
+
+.menu__link-btn {
+    color: #fff;
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.menu__link-btn:hover {
+    background-color: #ee7171;
+    border: 1px solid #ee7171;
+}
+
+.menu__btn-span {
+    color: #fff;
+}
+
 /* HEADER NAVBAR END */
 
 /* HEM SLIDER START */
@@ -181,6 +210,7 @@ display: flex;
     font-weight: 400;
     font-size: 30px;
 }
+
 /* HEM SLIDER +adr  END */
 
 
@@ -193,33 +223,37 @@ display: flex;
 
 
 /* FOOTER START */
-.footer__top{
+.footer__top {
     background-color: rgb(227, 136, 24);
     height: 26vh;
     text-align: center;
 }
-.footer__center{
-    background-color: rgb(40, 39, 46); 
+
+.footer__center {
+    background-color: rgb(40, 39, 46);
     height: 45vh;
     text-align: center;
     padding-top: 80px;
 }
-.footer__center-adr{
+
+.footer__center-adr {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 25px;
     text-align: center;
     color: #fff;
     padding-top: 15px;
-  
+
 }
-.footer__bottom{
+
+.footer__bottom {
     border-top: 1px solid rgb(95, 91, 91);
     height: 15vh;
     color: #fff;
     background-color: rgb(40, 39, 46);
 }
-.footer__bottom-content{ 
+
+.footer__bottom-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,9 +261,99 @@ display: flex;
     font-size: 14px;
     line-height: 25px;
     font-weight: 400;
-    
+
 }
-.footer__bottom-leftcolor{
+
+.footer__bottom-leftcolor {
     color: rgb(227, 136, 24);
 }
+
 /* FOOTER END  */
+
+/* PAGE 2 (TJANSTER) START  */
+.tjanster__top {
+    height: 45vh;
+    background-image: url(https://www.dackspecialisten.nu/images/tyres1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+.tjanster__top::before{  
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: .7;
+        z-index: 0;
+}
+
+.tjanster__top-name {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 160px;
+    color: #fff;
+    z-index: 1;
+}
+
+.tjanster__second {
+    background-color: rgb(231, 233, 233);
+    font-family: "Poppins", sans-serif;
+}
+
+.tjanster__second-row {
+    display: flex;
+    justify-content: space-between;     
+}
+
+.tjanster__second-text {
+    color: #000;
+    font-weight: 400;
+    font-size: 32px;  
+    padding-bottom: 10px; 
+}
+
+.tjanster__second-btn {  
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.tjanster__second-btn:hover {
+    background-color: #ee7171;
+    border: 1px solid #ee7171;
+}
+
+
+
+
+
+@media (max-width: 992px){
+
+    .tjanster__second-row {  
+        flex-direction: column;
+        align-self: center;
+        padding: 10px;
+    }
+    .tjanster__second-text {
+        text-align: center;
+        font-size: 28px;
+    }
+    .tjanster__second-link{
+        text-align: center;
+
+    }
+
+
+}
+/* PAGE 2 (TJANSTER) END  */
