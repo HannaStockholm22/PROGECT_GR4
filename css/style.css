@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
 }
-ul{
+
+ul {
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
 
 li {
@@ -233,6 +234,7 @@ font-family: 'Open Sans', sans-serif;
     background-color: rgb(227, 136, 24);
     height: 26vh;
     text-align: center;
+    
 }
 
 .footer__center {
@@ -287,16 +289,17 @@ font-family: 'Open Sans', sans-serif;
     position: relative;
     z-index: -1;
 }
-.tjanster__top::before{  
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: #000;
-        opacity: .6;
-        z-index: 0;
+
+.tjanster__top::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    z-index: 0;
 }
 
 .tjanster__top-name {
@@ -316,17 +319,17 @@ font-family: 'Open Sans', sans-serif;
 
 .tjanster__second-row {
     display: flex;
-    justify-content: space-between;     
+    justify-content: space-between;
 }
 
 .tjanster__second-text {
     color: #000;
     font-weight: 400;
-    font-size: 32px;  
-    padding-bottom: 10px; 
+    font-size: 32px;
+    padding-bottom: 10px;
 }
 
-.tjanster__second-btn {  
+.tjanster__second-btn {
     color: #fff;
     font-weight: 400;
     font-size: 16px;
@@ -339,28 +342,32 @@ font-family: 'Open Sans', sans-serif;
     background-color: #ee7171;
     border: 1px solid #ee7171;
 }
+
 /* PAGE 2 (TJANSTER) END  */
 
 
 
 /* PAGE 4 (KONTAKT) START  */
 
-.kontakt4{
+.kontakt4 {
     background-color: #fff;
 }
-.kontakt4__inner{
+
+.kontakt4__inner {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
 }
-.kontakt4__name{
+
+.kontakt4__name {
     font-size: 24px;
     text-align: start;
     color: #000;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
 }
-.kontakt4__info{
+
+.kontakt4__info {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -370,29 +377,35 @@ font-family: 'Open Sans', sans-serif;
     font-family: "Open Sans", sans-serif;
     /*border: 1px solid blue;*/
 }
-.kontakt4__info-item{
+
+.kontakt4__info-item {
     display: flex;
     justify-content: start;
     /*border:1px solid green;*/
     margin-bottom: 50px;
 }
-.kontakt4__info-icon{
+
+.kontakt4__info-icon {
     height: 70px;
     width: 70px;
-    padding: 10px 10px ;
+    padding: 15px 15px;
 }
-.kontakt4__info-head{
+
+.kontakt4__info-head {
     font-size: 16px;
     color: #222;
     padding-bottom: 10px;
 }
-.kontakt4__info-p{
+
+.kontakt4__info-p {
     padding-bottom: 10px;
 }
 
-.kontakt4__right-img{
+.kontakt4__right-img {
     width: 350px;
+
 }
+
 /* PAGE 4 (KONTAKT) END  */
 
 
@@ -400,25 +413,43 @@ font-family: 'Open Sans', sans-serif;
 
 /* MEDIA  START */
 
-/* MEDIA page2 Start  */
 
-@media (max-width: 992px){
 
-    .tjanster__second-row {  
+@media (max-width: 992px) {
+
+    .tjanster__second-row {
         flex-direction: column;
         align-self: center;
         padding: 10px;
     }
+
     .tjanster__second-text {
         text-align: center;
         font-size: 28px;
     }
-    .tjanster__second-link{
+
+    .tjanster__second-link {
         text-align: center;
     }
 
+    .kontakt4__inner {
+        flex-direction: column;
+    }
 }
 
-/* MEDIA page2 eng  */
+@media (max-width: 768px) {
+    .kontakt4__info {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .kontakt4__right-img {
+        width: 100%;
+
+    }
+
+
+}
+
 
 /* MEDIA END  */
