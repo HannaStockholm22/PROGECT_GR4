@@ -228,6 +228,15 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
+/* KARTA START */
+.karta__ifr {
+    height: 76vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* KARTA END  */
+
 
 /* FOOTER START */
 .footer__top {
