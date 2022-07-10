@@ -289,7 +289,7 @@ font-family: 'Open Sans', sans-serif;
         top: 0;
         left: 0;
         background: #000;
-        opacity: .7;
+        opacity: .6;
         z-index: 0;
 }
 
@@ -333,10 +333,12 @@ font-family: 'Open Sans', sans-serif;
     background-color: #ee7171;
     border: 1px solid #ee7171;
 }
+/* PAGE 2 (TJANSTER) END  */
 
 
+/* MEDIA  START */
 
-
+/* MEDIA page2 Start  */
 
 @media (max-width: 992px){
 
@@ -351,9 +353,11 @@ font-family: 'Open Sans', sans-serif;
     }
     .tjanster__second-link{
         text-align: center;
-
     }
 
-
 }
-/* PAGE 2 (TJANSTER) END  */
+
+
+/* MEDIA page2 eng  */
+
+/* MEDIA END  */
