@@ -225,6 +225,7 @@ font-family: 'Open Sans', sans-serif;
     height: 200px;
     color: red;
     background-color: #FFF;
+    border: 1px solid blue;
 }
 
 
@@ -354,7 +355,53 @@ font-family: 'Open Sans', sans-serif;
 
 /* PAGE 2 (TJANSTER) END  */
 
+/* PAGE 3 (OSS) START  */
+.liteslider{
+    background-color: #fff;
+    padding: 80px 0;
+}
+.liteslider__inner{
+    display: flex;
+    justify-content: start;
+}
+.liteslider__left{
+    background-image: url(https://www.dackspecialisten.nu/images/tyre57.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;   
+}
 
+.liteslider__content {
+    height: 180px;
+    width: 60%;  
+    margin-top: 160px;
+    margin-bottom: 160px;
+    box-shadow: 0 0 30px 1px rgba(0,0,0,.1); 
+}
+.carousel-inner{
+    position: absolute;
+    top: 0;
+}
+.carousel-item{
+    padding: 53px;
+
+}
+.liteslider__text-top{
+    font-weight: 400;
+    color: #667;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 15px;
+}
+.liteslider__text-bottom{
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* PAGE 3 (OSS) END  */
 
 /* PAGE 4 (KONTAKT) START  */
 
@@ -365,7 +412,7 @@ font-family: 'Open Sans', sans-serif;
 .kontakt4__inner {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 100px 0 0;
 }
 
 .kontakt4__name {
@@ -444,6 +491,10 @@ font-family: 'Open Sans', sans-serif;
     .kontakt4__inner {
         flex-direction: column;
     }
+    .liteslider__content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }    
 }
 
 @media (max-width: 768px) {
@@ -454,9 +505,23 @@ font-family: 'Open Sans', sans-serif;
 
     .kontakt4__right-img {
         width: 100%;
-
     }
 
+    .liteslider__inner{  
+        flex-direction: column;
+    }
+    .liteslider__left{
+        width: 98%;
+        height: 520px;
+        
+    }
+    .liteslider__content {
+        height: 180px;
+        width: 98%;  
+        margin-top: 30px;
+        margin-bottom: 30px;
+       
+    }
 
 }
 
