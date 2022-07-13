@@ -34,10 +34,6 @@ body {
     background-color: rgb(158, 175, 170);
 }
 
-/*
-font-family: 'Open Sans', sans-serif;
-*/
-
 
 /* HEADER-TOP START */
 .header__top {
@@ -62,7 +58,6 @@ font-family: 'Open Sans', sans-serif;
 
 .row__list-link {
     display: flex;
-
 }
 
 .row__list-p {
@@ -91,7 +86,6 @@ font-family: 'Open Sans', sans-serif;
 
 .row__list-link {
     display: flex;
-
 }
 
 .row__list-p {
@@ -221,12 +215,103 @@ font-family: 'Open Sans', sans-serif;
 /* HEM SLIDER +adr  END */
 
 
+/* WHEN  START */
+.when {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.when__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.when__left {
+    width: 50%;
+}
+
+.when__left-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.when__left-title::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -10px;
+    border: 2px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.when__left-title::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50px;
+    bottom: -6px;
+    left: 15px;
+    background: rgb(227, 136, 24);
+}
+.when__item{
+    padding-bottom: 35px;
+}
+
+.when__item-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:#222;
+}
+
+.when__item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #667;
+}
+
+.when__right{
+    width: 50%;
+}
+
+.when__right-content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px,1fr));
+    grid-template-rows:  repeat(2,250px);  
+     
+}
+
+.when__right-item{
+    border:  1px solid rgb(229, 229, 231);
+    margin-left: 30px ;
+    margin-bottom: 30px;
+    text-align: center;   
+}
+
+.when__right-img{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+.when__right-title{
+    padding: 5px;
+}
+
+
+
+/* WHEN  END */
+
 .new {
     height: 200px;
     color: red;
     background-color: #FFF;
     border: 1px solid blue;
 }
+
+
+
 
 
 /* KARTA START */
@@ -236,6 +321,7 @@ font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
+
 /* KARTA END  */
 
 
@@ -244,7 +330,7 @@ font-family: 'Open Sans', sans-serif;
     background-color: rgb(227, 136, 24);
     height: 26vh;
     text-align: center;
-    
+
 }
 
 .footer__center {
@@ -356,45 +442,48 @@ font-family: 'Open Sans', sans-serif;
 /* PAGE 2 (TJANSTER) END  */
 
 /* PAGE 3 (OSS) START  */
-.liteslider{
+.liteslider {
     background-color: #fff;
     padding: 80px 0;
 }
-.liteslider__inner{
+
+.liteslider__inner {
     display: flex;
     justify-content: start;
 }
-.liteslider__left{
+
+.liteslider__left {
     background-image: url(https://www.dackspecialisten.nu/images/tyre57.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37%;   
+    width: 37%;
 }
 
 .liteslider__content {
     height: 180px;
-    width: 60%;  
+    width: 60%;
     margin-top: 160px;
     margin-bottom: 160px;
-    box-shadow: 0 0 30px 1px rgba(0,0,0,.1); 
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, .1);
 }
-.carousel-inner{
-    position: absolute;
-    top: 0;
-}
-.carousel-item{
+
+
+.liteslider-pad {
     padding: 53px;
 
+
 }
-.liteslider__text-top{
+
+.liteslider__text-top {
     font-weight: 400;
     color: #667;
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
     padding-bottom: 15px;
 }
-.liteslider__text-bottom{
+
+.liteslider__text-bottom {
     color: #222;
     font-weight: 400;
     font-size: 20px;
@@ -469,7 +558,24 @@ font-family: 'Open Sans', sans-serif;
 
 /* MEDIA  START */
 
+@media (max-width: 1200px){
+    .when__inner{
+        flex-direction: column;
+    } 
+    .when__left{
+        width: 100%;
+    }
+    .when__right{
+        width: 100%;
+    }
+    .when__right-content{
+        column-gap: 30px;
+    }
+    .when__right-item{ 
+        margin-left: 0;      
+    }
 
+}
 
 @media (max-width: 992px) {
 
@@ -491,13 +597,20 @@ font-family: 'Open Sans', sans-serif;
     .kontakt4__inner {
         flex-direction: column;
     }
+
     .liteslider__content {
         margin-top: 50px;
         margin-bottom: 50px;
-    }    
+    }
 }
 
 @media (max-width: 768px) {
+
+    .when__right-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (4,250px); 
+    }
+
     .kontakt4__info {
         flex-direction: column;
         margin: 15px;
@@ -507,20 +620,21 @@ font-family: 'Open Sans', sans-serif;
         width: 100%;
     }
 
-    .liteslider__inner{  
+    .liteslider__inner {
         flex-direction: column;
     }
-    .liteslider__left{
+
+    .liteslider__left {
         width: 98%;
         height: 520px;
-        
     }
+
     .liteslider__content {
         height: 180px;
-        width: 98%;  
+        width: 98%;
         margin-top: 30px;
         margin-bottom: 30px;
-       
+
     }
 
 }
