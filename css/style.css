@@ -254,7 +254,8 @@ body {
     left: 15px;
     background: rgb(227, 136, 24);
 }
-.when__item{
+
+.when__item {
     padding-bottom: 35px;
 }
 
@@ -262,7 +263,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
-    color:#222;
+    color: #222;
 }
 
 .when__item-text {
@@ -272,30 +273,31 @@ body {
     color: #667;
 }
 
-.when__right{
+.when__right {
     width: 50%;
 }
 
-.when__right-content{
+.when__right-content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px,1fr));
-    grid-template-rows:  repeat(2,250px);  
-     
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 250px);
+
 }
 
-.when__right-item{
-    border:  1px solid rgb(229, 229, 231);
-    margin-left: 30px ;
+.when__right-item {
+    border: 1px solid rgb(229, 229, 231);
+    margin-left: 30px;
     margin-bottom: 30px;
-    text-align: center;   
+    text-align: center;
 }
 
-.when__right-img{
+.when__right-img {
     width: 50px;
     height: 50px;
     margin-top: 50px;
 }
-.when__right-title{
+
+.when__right-title {
     padding: 5px;
 }
 
@@ -439,6 +441,104 @@ body {
     border: 1px solid #ee7171;
 }
 
+.nar {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.nar__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 50px;
+    color: #222;
+    text-align: start;
+}
+
+.nar__content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(250px, 370px));
+    gap: 30px;
+}
+
+.nar__item {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(229, 229, 231);
+}
+
+.nar__item-top {
+    position: relative;
+}
+
+.nar__item-top::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(167, 167, 171, 0.3);
+    transition: all .6s;
+    opacity: 0;
+}
+
+.nar__item-top:hover::before {
+    opacity: 1;
+}
+
+.nar__item-bottom {
+    padding-top: 20px;
+}
+
+.nar__item-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: #222;
+}
+
+.nar__item-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #667;
+}
+
+.vision {
+    background-color: #000;
+    height: 550px;
+    padding: 60px 0;
+}
+
+.vision__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision__left {
+    text-align: start;
+}
+
+.vision__left-text {
+    color: #667;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.vision__left-title {
+    color: #fff;
+    max-width: 300px;
+    font-size: 64px;
+    line-height: 66px;
+    font-weight: 500;
+}
+
 /* PAGE 2 (TJANSTER) END  */
 
 /* PAGE 3 (OSS) START  */
@@ -558,22 +658,35 @@ body {
 
 /* MEDIA  START */
 
-@media (max-width: 1200px){
-    .when__inner{
+@media (max-width: 1200px) {
+    .when__inner {
         flex-direction: column;
-    } 
-    .when__left{
+    }
+
+    .when__left {
         width: 100%;
     }
-    .when__right{
+
+    .when__right {
         width: 100%;
     }
-    .when__right-content{
+
+    .when__right-content {
         column-gap: 30px;
     }
-    .when__right-item{ 
-        margin-left: 0;      
+
+    .when__right-item {
+        margin-left: 0;
     }
+
+    .vision {
+        height: 450px;
+        padding: 60px 0 20px;
+    }
+
+    .vision__right-img {
+        width: 90%;
+    }page2.html
 
 }
 
@@ -594,6 +707,26 @@ body {
         text-align: center;
     }
 
+    .vision {
+        height: 650px;
+    }
+
+    .vision__inner {
+        flex-direction: column;
+    }
+
+    .vision__left {
+        text-align: center;
+    }
+
+    .vision__left-title {
+        color: #fff;
+        max-width: 800px;
+        font-size: 64px;
+        line-height: 66px;
+        margin-bottom: 20px;
+    }
+
     .kontakt4__inner {
         flex-direction: column;
     }
@@ -606,9 +739,9 @@ body {
 
 @media (max-width: 768px) {
 
-    .when__right-content{
+    .when__right-content {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat (4,250px); 
+        grid-template-rows: repeat (4, 250px);
     }
 
     .kontakt4__info {
@@ -639,5 +772,14 @@ body {
 
 }
 
+@media (max-width: 576px) {
+
+    .nar__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+        gap: 30px;
+    }
+
+}
 
 /* MEDIA END  */
